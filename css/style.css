@@ -1,8 +1,32 @@
+/*  CSS STYLE ECO2 V1 */
 body
         {
+            margin: 80px;
             background-color: black;
             overflow-y: hidden;
         }
+
+main
+        {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-between;
+        }
+
+/* Texte des jauges*/
+
+.texte_jauge_haut
+        {
+            top: -50px;
+            position: absolute;
+        }
+.texte_jauge_bas
+        {
+            position: absolute;
+        }
+
+/* Logo */
+
 .Logo_eco
         {
             width: 300px;
@@ -11,98 +35,90 @@ body
             margin-right: auto;
             cursor: pointer;
         }
-#Menu
+
+/*Graph*/
+
+#graph
         {
-            text-align: center;
-            color: white;
-            font-size: 42px;
-        }
-.texte_menu
-        {
-            text-align: center;
-            color: white;
-            font-size: 21px;
-        }
-.slide_container
-        {
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
+            width: 40%;
+            height: 300px;
+            background-color: green;
             margin-top: 100px;
-            width: 500px;
-            cursor: pointer;
         }
-.Bouton_Agir
+
+/*Bloc annonce fin du monde + Jauges*/
+
+.annonce_sliders_content
         {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 50px;
-            width: 500px;
-            height: 100px;
-            font-size: 60px;
-            font-family: 'Charm', cursive;
-            background-color: #41DE28;
-            color: white;
-            z-index: 10;
-            position: relative;
-            cursor: pointer;
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
         }
-.Photo_de_terre
-        {
-            margin-top: -270px;
-            margin-left: -10px;
-            margin-bottom: -10px;
-        }
+
+/* Definitions des jauges verticales*/
+
 input[type=range][orient=vertical]
-{
-    writing-mode: bt-lr; /* IE */
-    -webkit-appearance: slider-vertical; /* WebKit */
-    width: 8px;
-    height: 175px;
-    padding: 0 5px;
-    cursor: pointer;
-}
+        {
+            writing-mode: bt-lr; /* IE */
+            -webkit-appearance: slider-vertical; /* WebKit */
+            width: 8px;
+            height: 175px;
+            padding: 0 5px;
+            cursor: pointer;
+        }
 #Les_sliders_verticaux
         {
             display: flex;
             display: -webkit-flex;
             justify-content: space-evenly;
-            margin-top: 100px;
+            margin-top: 0px;
         }
-.viande_ou_végé
+
+/* Jauge viande ou vege */
+
+.viande_ou_vege
         {
+            position: relative;
             text-align: center;
             color: white;
             z-index: 10;
         }
+
+/* Jauge Naissance ou deces */
+
 .naissance_ou_deces
         {
+            position: relative;
             text-align: center;
             color: white;
             z-index: 10;
         }
+
+/* Jauge Energies */
+
 .Efossile_ou_Eelectrique
         {
+            position: relative;
             text-align: center;
             color: white;
             z-index: 10;
         }
-.Photo_de_terre_page2
+
+/* Textes Annonces de fin du monde */
+
+#Texte_annonce_fin_du_monde
         {
-            display: flex;
-            margin-top: -42px;
-            margin-left: -10px;
-            margin-bottom: -10px;
+            margin-top: 50px;
         }
 .texte_fin_du_monde
         {
-            margin-top: -250px;
             color: white;
             text-align: center;
             font-size: 42px;
         }
-.année_fdm
+.annee_fdm
         {
             color: white;
             text-align: center;

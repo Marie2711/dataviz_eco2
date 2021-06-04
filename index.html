@@ -1,71 +1,56 @@
 <!DOCTYPE html>
 <html>
-
-    <!-- LIENS -->
-
     <head>
         <meta charset="utf_8">
         <title>Page_cursor</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
 
-        <!-- HEADER -->
+        <!--Header-->
 
         <header>
             <a href="menu_2021.html">
-                <img src="img/Title.svg" alt="logo" class="Logo_eco">
+                <img src="/img/Title.svg" alt="logo" class="Logo_eco">
             </a>
         </header>
 
-        <!-- MAIN -->
+        <!--Main-->
 
         <main>
 
-          <!-- CURSOR MEAT OR VEGETABLE -->
+            <!--Graph-->
 
-          <section id="Les_sliders_verticaux">
-              <div class="viande_ou_vege">
-                  <p>Viande</p>
-                  <input type="range" orient="vertical" min="0" max="100" step="10" step="10" class="slide_container_verticlal_1">
-                  <p>Légumes</p>
-              </div>
+            <section id="graph">
+            <!--Ici sera afficher les graph-->
+            </section>
+            
+            <div class="annonce_sliders_content">
 
-              <!-- CURSOR POPULATION -->
+                <!--Les jauges verticales-->
 
-              <div class="naissance_ou_deces">
-                  <p>Naisssance</p>
-                  <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_2">
-                  <p>Déces</p>
-              </div>
-
-              <!-- CURSOR ENERGY -->
-
-              <div class="Efossile_ou_Eelectrique">
-                  <p>Energie fossile</p>
-                  <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_3">
-                  <p>Energie Electrique</p>
-              </div>
-              <div id="text"></div>
-          </section>
+                <section id="Les_sliders_verticaux">
+                    <div class="viande_ou_vege">
+                        <p class="texte_jauge_haut">Viande</p>
+                        <input type="range" orient="vertical" min="1" max="100" value="50" class="slide_container_verticlal_1">
+                        <p class="texte_jauge_bas">Légumes</p>
+                    </div>
+                    <div class="naissance_ou_deces">
+                        <p class="texte_jauge_haut">Naisssance</p>
+                        <input type="range" orient="vertical" min="1" max="100" value="50" class="slide_container_verticlal_2">
+                        <p class="texte_jauge_bas">Déces</p>
+                    </div>
+                    <div class="Efossile_ou_Eelectrique">
+                        <p class="texte_jauge_haut">Energie fossile</p>
+                        <input type="range" orient="vertical" min="1" max="100" value="50" class="slide_container_verticlal_3">
+                        <p class="texte_jauge_bas">Energie Electrique</p>
+                    </div>
+                </section>
+                <div id="Texte_annonce_fin_du_monde">
+                    <p class="texte_fin_du_monde">FIN DU MONDE :</p>
+                    <div class="annee_fdm">2063</div>
+                </div>
+            </div>
         </main>
-
-        <!-- IMAGE EARTH -->
-
-        <div>
-            <img src="img/terre.svg" alt="Terre" class="Photo_de_terre_page2">
-        </div>
-
-        <!-- FINAL COUNTDOWN -->
-
-        <div>
-        <p class="texte_fin_du_monde">FIN DU MONDE :</p>
-        <div class="année_fdm">2063</div>
-        </div>
-
-        <!-- IMPORT JS -->
-        
-        <script src="js/jQuery.js"></script>
-        <script src="js/main.js"></script>
     </body>
 </html>
