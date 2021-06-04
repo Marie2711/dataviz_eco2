@@ -47,6 +47,8 @@ $('.slide_container_verticlal_3').on('input',function(e){
     console.log("MOYENNE",Number(moy))
 });
 
+// COUNTDOWN
+
 var madiv = document.querySelector(".dog")
 var i = 555
 setInterval(function(){
