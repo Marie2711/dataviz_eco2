@@ -8,6 +8,9 @@ var v3 = 0;
 
 var moy = 0
 
+
+// Curseurs n°1 (Viandes / Vege)
+
 $('.slide_container_verticlal_1').on('input',function(e){
     v1list.push($(this).val())
     console.log("valeur n°1",v1list)
@@ -18,6 +21,9 @@ $('.slide_container_verticlal_1').on('input',function(e){
     console.log("MOYENNE",Number(moy))
 });
 
+
+// Curseurs n°2 (Population)
+
 $('.slide_container_verticlal_2').on('input',function(e){
     v2list.push($(this).val())
     console.log("valeur n°2",v2list)
@@ -27,6 +33,9 @@ $('.slide_container_verticlal_2').on('input',function(e){
     console.log(v1,v2,v3)
     console.log("MOYENNE",Number(moy))
 });
+
+
+// Curseurs n°3 (Energies)
 
 $('.slide_container_verticlal_3').on('input',function(e){
     v3list.push($(this).val())
