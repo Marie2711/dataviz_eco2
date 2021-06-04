@@ -123,3 +123,7 @@ input[type=range][orient=vertical]
             color: white;
             text-align: center;
         }
+
+.ddog {
+    color: white;
+}

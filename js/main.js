@@ -2,9 +2,9 @@
 var v1list = [];
 var v2list = [];
 var v3list = [];
-var v1 = 0;
-var v2 = 0;
-var v3 = 0;
+var v1 = 50;
+var v2 = 50;
+var v3 = 50;
 
 var moy = 0
 
@@ -46,3 +46,9 @@ $('.slide_container_verticlal_3').on('input',function(e){
     console.log(v1,v2,v3)
     console.log("MOYENNE",Number(moy))
 });
+
+var madiv = document.querySelector(".dog")
+var i = 555
+setInterval(function(){
+    madiv.innerHTML = i--
+}, 1000); 
