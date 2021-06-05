@@ -1,12 +1,11 @@
-// jQuery
-var v1list = [];
-var v2list = [];
-var v3list = [];
-var v1 = 50;
-var v2 = 50;
-var v3 = 50;
-
-var moy = 0
+// variables
+let v1list = [];
+let v2list = [];
+let v3list = [];
+let v1 = 50;
+let v2 = 50;
+let v3 = 50;
+let moy = 0
 
 
 // Curseurs n°1 (Viandes / Vege)
@@ -47,10 +46,32 @@ $('.slide_container_verticlal_3').on('input',function(e){
     console.log("MOYENNE",Number(moy))
 });
 
-// COUNTDOWN
 
-var madiv = document.querySelector(".dog")
-var i = 555
+
+// AVANT le final countdown déterminer les graphes
+
+
+// FINAL COUNTDOWN
+    // Varibles
+let allsec = 31536000*6  // Les secondes restantes jusqu'au endworld
+let madiv = document.querySelector(".annee_fdm")
+
 setInterval(function(){
-    madiv.innerHTML = i--
+    
+    // Définition des unités de temps
+    let annee = Math.floor(allsec / 31536000);
+    let jours = Math.floor(allsec / 31536000) - (annee * 365);
+    let heures = Math.floor(allsec / 3600) - (jours * 24);
+    let minutes = Math.floor(allsec / 60) - (heures * 60);
+    let secondes = allsec % 60;
+    
+    // Compilation du countdown
+    let formatted = annee.toString().padStart(2, '0') + ' ans ' + jours.toString().padStart(2, '0') + ' jours ' + heures.toString().padStart(2, '0') + ' heures ' + minutes.toString().padStart(2, '0') + ' minutes ' + secondes.toString().padStart(2, '0') + ' secondes';
+    
+    // Affichage
+    madiv.innerHTML = formatted
+
+    // Décrémentation
+    allsec--
+    
 }, 1000); 

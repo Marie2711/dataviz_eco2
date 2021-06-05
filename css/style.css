@@ -124,6 +124,10 @@ input[type=range][orient=vertical]
             text-align: center;
         }
 
+.myyear {
+    color: white;
+}
+
 .ddog {
     color: white;
 }
