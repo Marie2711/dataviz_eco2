@@ -52,26 +52,13 @@ $('.slide_container_verticlal_3').on('input',function(e){
 
 
 // FINAL COUNTDOWN
-    // Varibles
-let allsec = 31536000*6  // Les secondes restantes jusqu'au endworld
-let madiv = document.querySelector(".annee_fdm")
-
+let cd_input = document.querySelector(".annee_fdm")
 setInterval(function(){
     
     // Définition des unités de temps
-    let annee = Math.floor(allsec / 31536000);
-    let jours = Math.floor(allsec / 31536000) - (annee * 365);
-    let heures = Math.floor(allsec / 3600) - (jours * 24);
-    let minutes = Math.floor(allsec / 60) - (heures * 60);
-    let secondes = allsec % 60;
-    
-    // Compilation du countdown
-    let formatted = annee.toString().padStart(2, '0') + ' ans ' + jours.toString().padStart(2, '0') + ' jours ' + heures.toString().padStart(2, '0') + ' heures ' + minutes.toString().padStart(2, '0') + ' minutes ' + secondes.toString().padStart(2, '0') + ' secondes';
+    let fdm = Math.floor(2050 + (2050*(moy/100)))
     
     // Affichage
-    madiv.innerHTML = formatted
-
-    // Décrémentation
-    allsec--
+    cd_input.innerHTML = fdm
     
-}, 1000); 
+}, 1000);
