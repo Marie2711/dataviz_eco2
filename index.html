@@ -10,8 +10,8 @@
         <!--Header-->
 
         <header>
-            <a href="menu_2021.html">
-                <img src="/img/Title.svg" alt="logo" class="Logo_eco">
+            <a href="v1_page1.html">
+                <img src="/img/Title.svg" alt="logo" class="logo_eco">
             </a>
         </header>
 
@@ -22,16 +22,16 @@
             <!--Graph-->
 
             <section id="graph">
-                <!--Ici sera afficher les graph-->
+            <!--Ici sera afficher les graph-->
             </section>
             
             <div class="annonce_sliders_content">
 
                 <!--Les jauges verticales-->
 
-                <section id="Les_sliders_verticaux">
+                <section id="les_sliders_verticaux">
 
-                    <!-- Viandes / Vege (unit: méthane) -->
+                    <!--Methane-->
 
                     <div class="viande_ou_vege">
                         <p class="texte_jauge_haut">Viande</p>
@@ -39,34 +39,40 @@
                         <p class="texte_jauge_bas">Légumes</p>
                     </div>
 
-                    <!-- Population -->
+                    <!--Population-->
 
                     <div class="naissance_ou_deces">
                         <p class="texte_jauge_haut">Naisssance</p>
-                        <input type="range" value="0" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_2">
-                        <p class="texte_jauge_bas">Déces</p>
+                        <div class="input_valeur_content">
+                            <input type="range" value="0" orient="vertical" min="0" max="100" step="10" list="valeur_jauge" class="slide_container_verticlal_2">
+                            <datalist id="valeur_jauge">
+                                <option value="0" label="N">
+                                <option value="1" label="2">
+                                <option value="2" label="1">
+                                <option value="3" label="0">
+                            </datalist>
+                        </div>
                     </div>
 
-                    <!-- Energies fossiles / renouvelable (unit: CO2) -->
+                    <!--CO2-->
 
-                    <div class="Efossile_ou_Eelectrique">
+                    <div class="e_fossile_ou_e_electrique">
                         <p class="texte_jauge_haut">Energie fossile</p>
                         <input type="range" value="0" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_3">
                         <p class="texte_jauge_bas">Energie Electrique</p>
                     </div>
                 </section>
 
-                <!-- FINAL COUNTDOWN -->
+                <!--Final countdown-->
 
-                <div id="Texte_annonce_fin_du_monde">
+                <div id="texte_annonce_fin_du_monde">
                     <p class="texte_fin_du_monde">FIN DU MONDE :</p>
-                    <div class="myyear">
-                        <h1 class="annee_fdm"></h1>
-                    </div>
+                    <h1 class="annee_fdm">2050</h1>
                 </div>
             </div>
         </main>
 
+        <!-- JS -->
         <script src="js/jQuery.js"></script>
         <script src="js/main.js"></script>
     </body>

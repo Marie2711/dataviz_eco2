@@ -2,7 +2,7 @@
 body
         {
             margin: 80px;
-            background-color: black;
+            background-color: white;
             overflow-y: hidden;
         }
 
@@ -12,6 +12,18 @@ main
             display: -webkit-flex;
             justify-content: space-between;
         }
+
+datalist 
+        {
+            color: black;
+            display: flex !important;
+            display: -webkit-flex;
+            flex-direction: column;
+            align-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+
 
 /* Texte des jauges*/
 
@@ -27,7 +39,7 @@ main
 
 /* Logo */
 
-.Logo_eco
+.logo_eco
         {
             width: 300px;
             display: block;
@@ -68,7 +80,7 @@ input[type=range][orient=vertical]
             padding: 0 5px;
             cursor: pointer;
         }
-#Les_sliders_verticaux
+#les_sliders_verticaux
         {
             display: flex;
             display: -webkit-flex;
@@ -82,52 +94,49 @@ input[type=range][orient=vertical]
         {
             position: relative;
             text-align: center;
-            color: white;
+            color: black;
             z-index: 10;
         }
 
 /* Jauge Naissance ou deces */
 
+.input_valeur_content
+        {
+            display: flex;
+            display: -webkit-flex;
+        }
 .naissance_ou_deces
         {
             position: relative;
             text-align: center;
-            color: white;
+            color: black;
             z-index: 10;
         }
 
 /* Jauge Energies */
 
-.Efossile_ou_Eelectrique
+.e_fossile_ou_e_electrique
         {
             position: relative;
             text-align: center;
-            color: white;
+            color: black;
             z-index: 10;
         }
 
 /* Textes Annonces de fin du monde */
 
-#Texte_annonce_fin_du_monde
+#texte_annonce_fin_du_monde
         {
             margin-top: 50px;
         }
 .texte_fin_du_monde
         {
-            color: white;
+            color: black;
             text-align: center;
             font-size: 42px;
         }
 .annee_fdm
         {
-            color: white;
+            color: black;
             text-align: center;
         }
-
-.myyear {
-    color: white;
-}
-
-.ddog {
-    color: white;
-}
