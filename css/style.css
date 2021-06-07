@@ -71,7 +71,7 @@ datalist
 
 /* Definitions des jauges verticales*/
 
-input[type=range][orient=vertical]
+input
         {
             writing-mode: bt-lr; /* IE */
             -webkit-appearance: slider-vertical; /* WebKit */
@@ -79,7 +79,14 @@ input[type=range][orient=vertical]
             height: 175px;
             padding: 0 5px;
             cursor: pointer;
+            transform: rotate(180deg);
         }
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #B6B6B6;
+    border-radius: 25px;
+    }
+
 #les_sliders_verticaux
         {
             display: flex;
