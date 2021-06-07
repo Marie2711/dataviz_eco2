@@ -10,7 +10,6 @@ let cd_input = document.querySelector(".annee_fdm")
 let min_fdm = 2050
 
 
-
 // Curseurs n°1 (Viandes / Vege)
 
 $('.slide_container_verticlal_1').on('input',function(e){
