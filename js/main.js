@@ -8,7 +8,8 @@ let v3 = 50;
 let moy = 0
 let cd_input = document.querySelector(".annee_fdm")
 let min_fdm = 2050
-
+let today = new Date().getFullYear()
+let time_difference = min_fdm - today
 
 // Curseurs n°1 (Viandes / Vege)
 
@@ -40,9 +41,10 @@ $('.slide_container_verticlal_3').on('input',function(e){
 
 setInterval(function(){
     // Définition du temps restants
-    let fdm = Math.floor(min_fdm + min_fdm*(moy/100))
+    let diff_moy = 1 - moy/100
+    let fdm = Math.floor(time_difference * diff_moy)
     
     // Affichage
-    cd_input.innerHTML = fdm
+    cd_input.innerHTML = fdm + min_fdm
     
 }, 1000);
