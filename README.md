@@ -10,4 +10,10 @@ Data utilisés:
 Etude de Tim Flannery qui nous dit que si nous ne modifions pas notre mode de vie la fin du monde serait prévue vers 2050. Cette date est bien sur donnée dans le cas de figure le plus péssimiste. Nous prenons donc ces valeur pour pouvoir faire nos calculs qui permettront une estimation de la date de fin du monde par rapport aux changement effecctué par l'utilisateur (avec les curseurs)
 https://www.francetvinfo.fr/meteo/climat/dereglement-climatique-la-fin-du-monde-est-elle-vraiment-prevue-pour-2050_3488261.html
 
+V2: ==> D.A :
 
+Dire à l'utilisateur que faire en arrivant sur le site
+Afficher les 3 curseurs puis terre puis date fdm (sur mobile: Terre puis fdm puis curseurs)
+sur la terre: afficher Viandes&Légumes (picto: vache et courgette) / Population (picto: humain ou batiment) / Energies (charbon ou éléctrique)
+sur les curseurs : repères au max et min (style volume voir ton mélangeur)
+sur le countdown fdm: afficher date OU temps restant (visible et marquant dans le but de faire prendre conscience à l'utilisateur de son impact)
