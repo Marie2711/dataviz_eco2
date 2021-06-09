@@ -38,14 +38,14 @@ $('.slide_container_verticlal_3').on('input',function(e){
 })
 
 // FINAL COUNTDOWN
-
 setInterval(function(){
-    // Définition du temps restants
-    console.log(moy)
-    let diff_moy = 1 - moy/100
-    let fdm = Math.floor(time_difference * diff_moy)
-    
-    // Affichage
-    cd_input.innerHTML = fdm + min_fdm
+    if(moy) {
+         // Définition du temps restants
+        let diff_moy = 1 - moy/100
+        let fdm = Math.floor(time_difference * diff_moy)
+        
+        // Affichage
+        cd_input.innerHTML = fdm + min_fdm
+    }
     
 }, 1000);
