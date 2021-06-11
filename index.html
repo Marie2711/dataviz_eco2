@@ -2,13 +2,15 @@
 <html>
     <head>
         <meta charset="utf_8">
-        <title>Dashboard</title>
+        <title>V2</title>
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
 
           <!--Main-->
+
         <main>
+
             <div class="structure_colonnes">
                 <!--section gauche-->
                 <div class="espacement_colonnes">
@@ -47,73 +49,67 @@
                     <section class="colonne_milieu">
                         
                         <!--Logo-->
-                            <div>
-                                <a href="index.html">
-                                    <img src="/img/Title.svg" alt="logo" class="logo_eco">
-                                </a>
-                            </div>
-                            <div class="emplacement_sliders">
-                                    <div id="les_sliders_verticaux">
+                        <div>
+                            <a href="v2_page.html">
+                                <img src="/img/Title.svg" alt="logo" class="logo_eco">
+                            </a>
+                        </div>
+                        <div class="emplacement_sliders">
+                                <div id="les_sliders_verticaux">
 
-                                        <!--Methane-->
-                    
-                                        <div class="viande_ou_vege">
-                                            <p class="texte_jauge_haut">Viande</p>
-                                            <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_1">
-                                            <p class="texte_jauge_bas">Légumes</p>
+                                    <!--Methane-->
+                
+                                    <div class="viande_ou_vege">
+                                        <p class="texte_jauge_haut">Viande</p>
+                                        <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_1">
+                                        <p class="texte_jauge_bas">Légumes</p>
+                                    </div>
+                
+                                    <!--Population-->
+                
+                                    <div class="naissance_ou_deces">
+                                        <p class="texte_jauge_haut">Naisssance</p>
+                                        <div class="input_valeur_content">
+                                            <input type="range" orient="vertical" min="0" max="3" step="1" list="valeur_jauge" class="slide_container_verticlal_2">
+                                            <datalist id="valeur_jauge">
+                                                <option value="0" label="N">
+                                                <option value="1" label="2">
+                                                <option value="2" label="1">
+                                                <option value="3" label="0">
+                                            </datalist>
                                         </div>
-                    
-                                        <!--Population-->
-                    
-                                        <div class="naissance_ou_deces">
-                                            <p class="texte_jauge_haut">Naisssance</p>
-                                            <div class="input_valeur_content">
-                                                <input type="range" orient="vertical" min="0" max="4" step="1" list="valeur_jauge" class="slide_container_verticlal_2">
-                                                <datalist id="valeur_jauge">
-                                                    <option value="0" label="N">
-                                                    <option value="1" label="2">
-                                                    <option value="2" label="1">
-                                                    <option value="3" label="0">
-                                                </datalist>
-                                            </div>
-                                            <p class="texte_jauge_bas">Déces</p>
-                                        </div>
-                    
-                                        <!--CO2-->
-                    
-                                        <div class="e_fossile_ou_e_electrique">
-                                            <p class="texte_jauge_haut">Energie fossile</p>
-                                            <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_3">
-                                            <p class="texte_jauge_bas">Energie Electrique</p>
-                                        </div>
+                                        <p class="texte_jauge_bas">Déces</p>
+                                    </div>
+                
+                                    <!--CO2-->
+                
+                                    <div class="e_fossile_ou_e_electrique">
+                                        <p class="texte_jauge_haut">Energie fossile</p>
+                                        <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_3">
+                                        <p class="texte_jauge_bas">Energie Electrique</p>
                                     </div>
                                 </div>
+                        </div>
 
-                                <div id="image_dechets">
-                                    <img src="/img/image_dechets.svg" alt="dechets" class="Photo_de_dechets">
-                            </div>
+                        <div id="image_dechets">
+                            <img src="/img/image_dechets.svg" alt="dechets" class="Photo_de_dechets">
+                        </div>
                     </section>
 
                     <!--section droite-->
 
                     <section class="colonne_droite">
-
-                        <!--courbe methane-->
-
                         <div class="emplacement_graph_methane">
-                            Méthane
+                            <!--courbe methane-->
+                            methane
                         </div>
-
-                        <!--courbe naissance-->
-
                         <div class="emplacement_graph_naissance">
-                            Naissance
+                            <!--courbe naissance-->
+                            naissance
                         </div>
-                        
-                        <!--courbe energies-->
-                        
                         <div class="emplacement_graph_energies">
-                            Energies
+                            <!--courbe energies-->
+                            energies
                         </div>
                     </section>
                 </div>
