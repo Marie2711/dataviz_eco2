@@ -6,7 +6,7 @@ let v1 = 50;
 let v2 = 50;
 let v3 = 50;
 let moy = 0
-let cd_input = document.querySelector(".texte_date_fin_du_monde")
+let cd_input = document.querySelector(".annee_fdm")
 let min_fdm = 2050
 let today = new Date().getFullYear()
 let time_difference = min_fdm - today
@@ -38,14 +38,14 @@ $('.slide_container_verticlal_3').on('input',function(e){
 })
 
 // FINAL COUNTDOWN
-
 setInterval(function(){
-    // Définition du temps restants
-    console.log(moy)
-    let diff_moy = 1 - moy/100
-    let fdm = Math.floor(time_difference * diff_moy)
-    
-    // Affichage
-    cd_input.innerHTML = fdm + min_fdm
+    if(moy) {
+         // Définition du temps restants
+        let diff_moy = 1 - moy/100
+        let fdm = Math.floor(time_difference * diff_moy)
+        
+        // Affichage
+        cd_input.innerHTML = fdm + min_fdm
+    }
     
 }, 1000);
