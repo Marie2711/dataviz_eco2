@@ -10,8 +10,6 @@ let cd_input = document.querySelector(".texte_date_fin_du_monde")
 let min_fdm = 2050
 let today = new Date().getFullYear()
 let time_difference = min_fdm - today
-let ga = document.querySelector(".slide_container_verticlal_2").max
-
 
 // Curseurs n°1 (Viandes / Vege)
 
@@ -43,6 +41,7 @@ $('.slide_container_verticlal_3').on('input',function(e){
 
 setInterval(function(){
     // Définition du temps restants
+    console.log(moy)
     let diff_moy = 1 - moy/100
     let fdm = Math.floor(time_difference * diff_moy)
     
