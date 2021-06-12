@@ -2,121 +2,115 @@
 <html>
     <head>
         <meta charset="utf_8">
-        <title>V2</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <title>V2_Finale</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+        <link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
     </head>
     <body>
 
-          <!--Main-->
+        <!-- header -->
+
+        <header>
+            <h1>ECO</h1>
+        </header>
+
+        <!-- Main -->
 
         <main>
+            <div class="structure_colonne">
 
-            <div class="structure_colonnes">
-                <!--section gauche-->
                 <div class="espacement_colonnes">
+
+                <!-- Colonne gauche -->
+
                     <section class="colonne_gauche">
 
-                        <!--Case terre-->
+                        <!-- LA TERRE -->
 
-                        <div id="emplacement_terre">
-                            <img src="/img/terre.svg" alt="Terre" class="Photo_de_terre">
+                        <div class="terre_3d">
+                            <svg></svg>
+                            <script src="https://d3js.org/d3.v4.min.js"></script>
+                            <script src="https://d3js.org/topojson.v1.min.js"></script>
+                            <script src="js/globe.js"></script>
+                        </div>
+                    </section>
+
+                    <!--Colonne droite-->
+
+                    <section class="colonne_droite">
+                        <div class="div_texte_consigne">
+                            <p class="texte_consigne_curseurs">Faites bouger les curseurs et voyez votre impact :</p>
                         </div>
 
-                        <div id="date_fin_du_monde">
-                            <h1 class="texte_date_fin_du_monde"></h1>
-                        </div>
+                        <!--Les sliders-->
 
-                        <div id="attention_plus_reset">
-                            <div class="attention">
-                                <img src="/img/attention.svg" alt="attention" class="Photo_logo_attention">
+                        <div class="emplacement_sliders">
+                            <div id="les_sliders_verticaux">
+
+                                <!--Methane-->
+            
+                                <div class="viande_ou_vege">
+                                    <p class="texte_jauge_haut">Viande</p>
+                                    <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_1">
+                                    <p class="texte_jauge_bas">Légumes</p>
+                                </div>
+            
+                                <!--Population-->
+            
+                                <div class="naissance_ou_deces">
+                                    <p class="texte_jauge_haut">Naisssance</p>
+                                    <div class="input_valeur_content">
+                                        <input type="range" orient="vertical" min="0" max="4" step="1" list="valeur_jauge" class="slide_container_verticlal_2">
+                                        <datalist id="valeur_jauge">
+                                            <option value="0" label="N">
+                                            <option value="1" label="3">
+                                            <option value="1" label="2">
+                                            <option value="2" label="1">
+                                            <option value="3" label="0">
+                                        </datalist>
+                                    </div>
+                                </div>
+            
+                                <!--CO2-->
+            
+                                <div class="e_fossile_ou_e_electrique">
+                                    <p class="texte_jauge_haut">Energie fossile</p>
+                                    <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_3">
+                                    <p class="texte_jauge_bas">Energie Electrique</p>
+                                </div>
                             </div>
-                            <div class="reset_content">
-                                <p class="texte_reset">Reset</p>
+                        </div>
+
+                        <!-- date fin du monde -->
+
+                        <div class="emplacement_fin_du_monde">
+                            <div id="date_fin_du_monde">
+                                <h1 class="texte_date_fin_du_monde"></h1>
+                            </div>
+
+                            
+                            <div class="bouton_fin_du_monde">
+                                <img src="/img/attention.svg" alt="attention" class="photo_logo_attention">
                             </div>
                         </div>
+
+                        <!-- population -->
 
                         <div id="nombre_population">
-                            <p class="texte_nombre_population">Population :</p>
+                            <p class="texte_nombre_population">Population : <span id="worldpop"></span></p>
                         </div>
+
+                        <!-- especes disparues -->
 
                         <div id="especes_disparues">
                             <p class="texte_especes_disparues">Especes Disparues :</p>
                         </div>
                     </section>
-
-                    <!--Section milieu-->
-
-                    <section class="colonne_milieu">
-                        
-                        <!--Logo-->
-                            <div>
-                                <a href="v2_page.html">
-                                    <img src="/img/Title.svg" alt="logo" class="logo_eco">
-                                </a>
-                            </div>
-                            <div class="emplacement_sliders">
-                                    <div id="les_sliders_verticaux">
-
-                                        <!--Methane-->
-                    
-                                        <div class="viande_ou_vege">
-                                            <p class="texte_jauge_haut">Viande</p>
-                                            <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_1">
-                                            <p class="texte_jauge_bas">Légumes</p>
-                                        </div>
-                    
-                                        <!--Population-->
-                    
-                                        <div class="naissance_ou_deces">
-                                            <p class="texte_jauge_haut">Naisssance</p>
-                                            <div class="input_valeur_content">
-                                                <input type="range" orient="vertical" min="0" max="3" step="1" list="valeur_jauge" class="slide_container_verticlal_2">
-                                                <datalist id="valeur_jauge">
-                                                    <option value="0" label="N">
-                                                    <option value="1" label="2">
-                                                    <option value="2" label="1">
-                                                    <option value="3" label="0">
-                                                </datalist>
-                                            </div>
-                                            <p class="texte_jauge_bas">Déces</p>
-                                        </div>
-                    
-                                        <!--CO2-->
-                    
-                                        <div class="e_fossile_ou_e_electrique">
-                                            <p class="texte_jauge_haut">Energie fossile</p>
-                                            <input type="range" orient="vertical" min="0" max="100" step="10" class="slide_container_verticlal_3">
-                                            <p class="texte_jauge_bas">Energie Electrique</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="image_dechets">
-                                    <img src="/img/image_dechets.svg" alt="dechets" class="Photo_de_dechets">
-                            </div>
-                    </section>
-
-                    <!--section droite-->
-
-                    <section class="colonne_droite">
-                        <div class="emplacement_graph_methane">
-                            <!--courbe methane-->
-                            methane
-                        </div>
-                        <div class="emplacement_graph_naissance">
-                            <!--courbe naissance-->
-                            naissance
-                        </div>
-                        <div class="emplacement_graph_energies">
-                            <!--courbe energies-->
-                            energies
-                        </div>
-                    </section>
                 </div>
             </div>
         </main>
-        <!-- JS -->
+        <script src="js/popcounter.js"></script>
         <script src="js/jQuery.js"></script>
         <script src="js/main.js"></script>
     </body>
-</html>

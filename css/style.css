@@ -1,24 +1,21 @@
-/*  CSS STYLE ECO2 V2 */
 body
         {
-            width: 99vw;
-            height: 95vh;
+            width: 98vw;
+            height: 94vh;
             background-color: #B9DEDC;
+            font-family: 'Marvel',sans-serif;
         }
-
-main
+header
         {
-            display: flex;
-            display: -webkit-flex;
-            justify-content: space-between;
-            width: 100%;
-            height: 100%;
+            text-align: center;
+            font-weight: 900;
+            font-size: 21px;
         }
 
 datalist 
         {
             color: black;
-            display: flex !important;
+            display: flex;
             display: -webkit-flex;
             flex-direction: column;
             justify-content: space-between;
@@ -26,6 +23,95 @@ datalist
             height: 175px;
         }
 
+.espacement_colonnes
+        {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+        }
+
+/* colonne gauche */
+
+.colonne_gauche
+        {
+            display: flex;
+            display: -webkit-flex;
+            width: 50%;
+            height: 100%;
+        }
+
+/* Photo de la terre */
+
+.terre_3d
+        {
+            display: flex;
+            display: -webkit-flex;
+            align-content: center;
+            width: 800px;
+            height: 600px;
+            position: relative;
+        }
+
+svg
+        {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -100px;
+            position: absolute;
+        }
+
+/* Colonne droite */
+
+.colonne_droite
+        {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+/* texte curseur */
+
+.div_texte_consigne
+        {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+.texte_consigne_curseurs
+        {
+            text-align: center;
+            font-weight: normal;
+            font-size: 20px;
+        }
+/* Les sliders */
+
+.emplacement_sliders
+        {
+            display: flex;
+            display: -webkit-flex;
+            width: 70%;
+            height: 300px;
+            border-radius: 7px;
+            background: #B9DEDC;
+            box-shadow: -9px -9px 19px #d5fffd,
+            9px 9px 19px #9dbdbb;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+#les_sliders_verticaux
+        {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+        }
 
 /* Texte des jauges*/
 
@@ -39,23 +125,38 @@ datalist
             position: absolute;
         }
 
-/*Graph*/
+/* Jauge Naissance ou deces */
 
-#graph
+.input_valeur_content
         {
-            width: 40%;
-            height: 300px;
-            background-color: green;
-        }
-
-/*Bloc annonce fin du monde + Jauges*/
-
-.annonce_sliders_content
-        {
-            width: 100%;
             display: flex;
             display: -webkit-flex;
-            flex-direction: column;
+            height: 100%;
+        }
+
+.naissance_ou_deces
+        {
+            position: relative;
+            text-align: center;
+            color: black;
+        }
+
+/* Jauge viande ou vege */
+
+.viande_ou_vege
+{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+/* Jauge Energies */
+
+.e_fossile_ou_e_electrique
+        {
+            position: relative;
+            text-align: center;
+            color: black;
         }
 
 /* Definitions des jauges verticales*/
@@ -78,294 +179,134 @@ input[type=range]::-webkit-slider-runnable-track
             border-radius: 25px;
         }
 
-/* Jauge viande ou vege */
+/* Fin du monde */
 
-.viande_ou_vege
-        {
-            position: relative;
-            text-align: center;
-            color: black;
-            z-index: 10;
-        }
-
-/* Jauge Naissance ou deces */
-
-.input_valeur_content
+.emplacement_fin_du_monde
         {
             display: flex;
             display: -webkit-flex;
-            height: 100%;
-        }
-.naissance_ou_deces
-        {
-            position: relative;
-            text-align: center;
-            color: black;
-            z-index: 10;
-        }
-
-/* Jauge Energies */
-
-.e_fossile_ou_e_electrique
-        {
-            position: relative;
-            text-align: center;
-            color: black;
-            z-index: 10;
-        }
-
-/* Textes Annonces de fin du monde */
-
-.texte_fin_du_monde
-        {
-            color: black;
-            text-align: center;
-            font-size: 42px;
-        }
-.annee_fdm
-        {
-            color: black;
-            text-align: center;
-        }
-
-/*Espacement colonnes*/
-.espacement_colonnes
-        {
-            display: flex;
-            display: -webkit-flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        }
-
-/*Structure colonnes*/
-
-.structure_colonnes
-        {
-            width: 100%;
-            height: 100%;
-        }
-
-/*colonne gauche*/
-
-.colonne_gauche
-        {
-            display: flex;
-            display: -webkit-flex;
-            flex-direction: column;
+            width: 70%;
             justify-content: space-between;
-            height: 90%;
         }
-
-/*La planete terre*/
-
-#emplacement_terre
-        {
-            width: 300px;
-            height: 200px;
-            border-radius: 7px;
-            background: #B9DEDC;
-            box-shadow: inset 9px 9px 19px #9dbdbb, inset
-            -9px -9px 19px #d5fffd;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
-.Photo_de_terre
-        {
-            width: 150px;
-        }
-
-/*Fin du monde*/
-        
 #date_fin_du_monde
         {
-            width: 300px;
-            height: 100px;
+            width: 45%;
+            height: 60px;
             border-radius: 7px;
             background: #B9DEDC;
             box-shadow: inset 9px 9px 19px #9dbdbb, inset
             -9px -9px 19px #d5fffd;
             display: flex;
+            display: -webkit-flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 10px;
         }
 .texte_date_fin_du_monde
         {
-            font-weight: bold;
+            color: white;
+            font-size: 50px;
         }
 
-/*attention + reset*/
-
-#attention_plus_reset
+.bouton_fin_du_monde
         {
+            width: 45%;
+            height: 60px;
+            border-radius: 7px;
+            background: #B9DEDC;
+            box-shadow: -9px -9px 19px #d5fffd,
+            9px 9px 19px #9dbdbb;
             display: flex;
             display: -webkit-flex;
-            justify-content: space-between;
-        }
-
-.attention
-        {
-            width: 45%;
-            height: 100px;
-            border-radius: 7px;
-            background: #B9DEDC;
-            box-shadow:  9px 9px 19px #9dbdbb,
-             -9px -9px 19px #d5fffd;
-            display: flex;
             justify-content: center;
-            align-content: center;
-        }
-
-.reset_content
-        {
-            width: 45%;
-            height: 100px;
-            border-radius: 7px;
-            background: #B9DEDC;
-            box-shadow:  9px 9px 19px #9dbdbb,
-             -9px -9px 19px #d5fffd;
-            display: flex;
-            justify-content: center;
-            align-content: center;
         }
 
 /*case population*/
 
 #nombre_population
         {
-            width: 300px;
-            height: 100px;
+            width: 70%;
+            height: 60px;
             border-radius: 7px;
             background: #B9DEDC;
             box-shadow: inset 9px 9px 19px #9dbdbb, inset
             -9px -9px 19px #d5fffd;
             display: flex;
-            justify-content: center;
             align-items: center;
+            margin-bottom: 10px;
         }
 
 /*case especes disparues*/
 
 #especes_disparues
         {
-            width: 300px;
-            height: 100px;
+            width: 70%;
+            height: 60px;
             border-radius: 7px;
             background: #B9DEDC;
             box-shadow: inset 9px 9px 19px #9dbdbb, inset
             -9px -9px 19px #d5fffd;
             display: flex;
-            justify-content: center;
             align-items: center;
+            margin-bottom: 10px;
         }
-        
-/*colonne milieu*/
-
-.colonne_milieu
+.texte_nombre_population
         {
-            display: flex;
-            display: -webkit-flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 90%;
+            text-align: center;
+            font-size: 40px;
+            margin-left: 10px;
+            color: white;
         }
-
-/* Logo */
-
-.logo_eco
+.texte_especes_disparues
         {
-            width: 300px;
-            display: flex;
-            display: -webkit-flex;
-            cursor: pointer;
+            text-align: center;
+            font-size: 40px;
+            margin-left: 10px;
+            color: white;
         }
 
-/*Les sliders*/
-
-.emplacement_sliders
+@media screen and (max-width: 1200px)
         {
-            display: flex;
-            display: -webkit-flex;
-            width: 400px;
-            height: 300px;
-            border-radius: 7px;
-            background: #B9DEDC;
-            box-shadow: inset 9px 9px 19px #9dbdbb, inset
-            -9px -9px 19px #d5fffd;
-            align-items: center;
-            justify-content: space-around;
-        }
-#les_sliders_verticaux
-        {
-            display: flex;
-            display: -webkit-flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        }
+            .espacement_colonnes
+                {
+                    display: flex;
+                    display: -webkit-flex;
+                    flex-wrap: wrap;
+                }
 
-/*photo dechets*/
+            .colonne_gauche
+                {
+                    display: flex;
+                    display: -webkit-flex;
+                    width: 100%;
+                    height: 100%;
+                }
 
-.Photo_de_dechets
-        {
-            width: 300px;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
+            .colonne_droite
+                {
+                    display: flex;
+                    display: -webkit-flex;
+                    flex-direction: column;
+                    width: 100% !important;
+                    height: 100%;
+                    text-align: center;
+                    justify-content: space-between;
+                    align-items: center;
+                }
 
-/*colonne droite*/
+            .texte_nombre_population
+                {
+                    text-align: center;
+                    font-size: 30px;
+                    margin-left: 10px;
+                    color: white;
+                }
 
-.colonne_droite
-        {
-            display: flex;
-            display: -webkit-flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 90%;
-        }
-
-/*graph methane*/
-
-.emplacement_graph_methane
-        {
-            width: 300px;
-            height: 200px;
-            border-radius: 7px;
-            background: #B9DEDC;
-            box-shadow: inset 9px 9px 19px #9dbdbb, inset
-            -9px -9px 19px #d5fffd;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
-.emplacement_graph_naissance
-        {
-            width: 300px;
-            height: 200px;
-            border-radius: 7px;
-            background: #B9DEDC;
-            box-shadow: inset 9px 9px 19px #9dbdbb, inset
-            -9px -9px 19px #d5fffd;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
-.emplacement_graph_energies
-        {
-            width: 300px;
-            height: 200px;
-            border-radius: 7px;
-            background: #B9DEDC;
-            box-shadow: inset 9px 9px 19px #9dbdbb, inset
-            -9px -9px 19px #d5fffd;
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            .texte_especes_disparues
+                {
+                    text-align: center;
+                    font-size: 30px;
+                    margin-left: 10px;
+                    color: white;
+                }
         }
