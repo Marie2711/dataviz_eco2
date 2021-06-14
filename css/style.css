@@ -9,9 +9,13 @@ header
         {
             text-align: center;
             font-weight: 900;
-            font-size: 21px;
+            font-size: 30px;
         }
 
+h1
+        {
+            margin: 0;
+        }
 datalist 
         {
             color: black;
@@ -60,6 +64,21 @@ svg
             position: absolute;
         }
 
+.terre_content
+        {
+            display: flex;
+            display: -webkit-flex;
+            width: 498px;
+            height: 498px;
+            border-radius: 360px;
+            background-color: white;
+            position: absolute;
+            z-index: -10;
+            top: 379px;
+            transform: translateY(-50%);
+            left: 138px;
+        }
+
 /* Colonne droite */
 
 .colonne_droite
@@ -86,7 +105,8 @@ svg
         {
             text-align: center;
             font-weight: normal;
-            font-size: 20px;
+            font-size: 25px;
+            margin: 0;
         }
 /* Les sliders */
 
@@ -181,6 +201,12 @@ input[type=range]::-webkit-slider-runnable-track
 
 /* Fin du monde */
 
+.fin_du_monde_av_date
+        {
+            color: black;
+            font-size: 40px;
+        }
+
 .emplacement_fin_du_monde
         {
             display: flex;
@@ -190,8 +216,8 @@ input[type=range]::-webkit-slider-runnable-track
         }
 #date_fin_du_monde
         {
-            width: 45%;
-            height: 60px;
+            width: 100%;
+            height: 80px;
             border-radius: 7px;
             background: #B9DEDC;
             box-shadow: inset 9px 9px 19px #9dbdbb, inset
@@ -200,25 +226,15 @@ input[type=range]::-webkit-slider-runnable-track
             display: -webkit-flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 50px;
+            flex-direction: row;
         }
 .texte_date_fin_du_monde
         {
-            color: white;
-            font-size: 50px;
-        }
-
-.bouton_fin_du_monde
-        {
-            width: 45%;
-            height: 60px;
-            border-radius: 7px;
-            background: #B9DEDC;
-            box-shadow: -9px -9px 19px #d5fffd,
-            9px 9px 19px #9dbdbb;
             display: flex;
             display: -webkit-flex;
-            justify-content: center;
+            color: #aa0000;
+            font-size: 60px;
         }
 
 /*case population*/
@@ -236,9 +252,9 @@ input[type=range]::-webkit-slider-runnable-track
             margin-bottom: 10px;
         }
 
-/*case especes disparues*/
+/*case lien article*/
 
-#especes_disparues
+#lien_article_div
         {
             width: 70%;
             height: 60px;
@@ -252,17 +268,22 @@ input[type=range]::-webkit-slider-runnable-track
         }
 .texte_nombre_population
         {
-            text-align: center;
             font-size: 40px;
-            margin-left: 10px;
+            margin: 0 auto;
             color: white;
         }
-.texte_especes_disparues
+
+.le_a
         {
-            text-align: center;
-            font-size: 40px;
+            margin: 0 auto;
+            text-decoration: none;
+        }
+
+.lien_article
+        {
+            font-size: 30px;
             margin-left: 10px;
-            color: white;
+            color: blue;
         }
 
 @media screen and (max-width: 1200px)
