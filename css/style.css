@@ -1,138 +1,522 @@
-/*  CSS STYLE ECO2 V1 */
+/* Body desktop */
+
 body
-        {
-            margin: 80px;
-            background-color: white;
-            overflow-y: hidden;
-        }
+{
+    width: 98vw;
+    height: 100%;
+    background-color: #B9DEDC;
+    font-family: 'Marvel',sans-serif;
+    text-align: justify;
+}
+
+/* Header */
+
+header
+{
+    font-size: 60px;
+    text-align: center;
+}
+
+#title {
+    font-size: 60px;
+    color: #aa0000;
+}
+
+/* Main */
 
 main
-        {
-            display: flex;
-            display: -webkit-flex;
-            justify-content: space-between;
-        }
+{
+    width: 100%;
+    height: 100%;
+}
 
-datalist 
-        {
-            color: black;
-            display: flex !important;
-            display: -webkit-flex;
-            flex-direction: column;
-            align-content: space-between;
-            width: 100%;
-            height: 100%;
-        }
+/* Les Titres */
 
+h1
+{
+    font-size: 42px;
+    text-align: center;
+}
 
-/* Texte des jauges*/
+h2
+{
+    font-size: 31px;
+    text-align: center;
+}
 
-.texte_jauge_haut
-        {
-            top: -50px;
-            position: absolute;
-        }
-.texte_jauge_bas
-        {
-            position: absolute;
-        }
+/* Grand texte en haut */
 
-/* Logo */
+#le_texte_informatif
+{
+    margin: 0 10%;
+    text-align: center;
+    font-size: 17px;
+    font-size: 20px;
+}
 
-.logo_eco
-        {
-            width: 300px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            cursor: pointer;
-        }
+#mini_date {
+    color:#aa0000;
+    font-weight: bold;
+}
 
-/*Bloc annonce fin du monde + Jauges*/
+/* Les logos */
 
-.annonce_sliders_content
-        {
-            margin-top: 100px;
-            width: 100%;
-            display: flex;
-            display: -webkit-flex;
-            flex-direction: column;
-        }
+.petits_logo
+{
+    width: 15px;
+    height: 15px;
+}
 
 /* Definitions des jauges verticales*/
 
-input
-        {
-            writing-mode: bt-lr; /* IE */
-            -webkit-appearance: slider-vertical; /* WebKit */
-            width: 8px;
-            height: 175px;
-            padding: 0 5px;
-            cursor: pointer;
-        }
+input[type=range][orient=vertical]
+{
+writing-mode: bt-lr; /* IE */
+-webkit-appearance: slider-vertical; /* WebKit */
+width: 8px;
+height: 175px;
+padding: 0 5px;
+cursor: pointer;
+}
 
-input[type=range]::-webkit-slider-runnable-track {
-    background: #B6B6B6;
-    border-radius: 25px;
-    }
+/*style de l'input*/
 
+input[type=range]::-webkit-slider-runnable-track 
+{
+background: #494949;
+border-radius: 25px;
+}
+
+/* Les sliders */
+
+.emplacement_sliders
+{
+    display: flex;
+    display: -webkit-flex;
+    width: 80%;
+    height: 300px;
+    border-radius: 7px;
+    background: #B9DEDC;
+    box-shadow: -9px -9px 19px #d5fffd,
+    9px 9px 19px #9dbdbb;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
 #les_sliders_verticaux
-        {
-            display: flex;
-            display: -webkit-flex;
-            justify-content: space-evenly;
-            margin-top: 0px;
-        }
+{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
 
-/* Jauge viande ou vege */
-
-.viande_ou_vege
-        {
-            position: relative;
-            text-align: center;
-            color: black;
-            z-index: 10;
-        }
+datalist 
+{
+    color: black;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 175px;
+}
 
 /* Jauge Naissance ou deces */
 
 .input_valeur_content
-        {
-            display: flex;
-            display: -webkit-flex;
-        }
+{
+    display: flex;
+    display: -webkit-flex;
+    height: 100%;
+}
+
 .naissance_ou_deces
-        {
-            position: relative;
-            text-align: center;
-            color: black;
-            z-index: 10;
-        }
+{
+    position: relative;
+    text-align: center;
+    color: black;
+}
 
-/* Jauge Energies */
+/* texte curseur */
 
-.e_fossile_ou_e_electrique
-        {
-            position: relative;
-            text-align: center;
-            color: black;
-            z-index: 10;
-        }
+.div_texte_consigne
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
 
-/* Textes Annonces de fin du monde */
+.texte_consigne_curseurs
+{
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+    margin: 0;
+}
 
-#texte_annonce_fin_du_monde
+/*case population*/
+
+#nombre_population
+{
+    width: 80%;
+    height: 60px;
+    border-radius: 7px;
+    background: #B9DEDC;
+    box-shadow: inset 9px 9px 19px #9dbdbb, inset
+    -9px -9px 19px #d5fffd;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: -250px;
+}
+
+.texte_nombre_population
+{
+    margin: 0 auto;
+    font-size: 20px;
+    color: black;
+}
+
+/*case lien article*/
+
+#lien_article_div
+{
+    width: 80%;
+    height: 60px;
+    border-radius: 7px;
+    background: #B9DEDC;
+    box-shadow: -9px -9px 19px #d5fffd,
+    9px 9px 19px #9dbdbb;
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.le_a
+{
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.lien_article
+{
+    font-size: 20px;
+    margin-left: 10px;
+    color: black;
+}
+
+/* Fin du monde */
+
+.fin_du_monde_av_date
+{
+    color: black;
+    font-size: 20px;
+}
+
+.emplacement_fin_du_monde
+{
+    display: flex;
+    display: -webkit-flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#date_fin_du_monde
+{
+    width: 100%;
+    height: 80px;
+    border-radius: 7px;
+    background: #B9DEDC;
+    box-shadow: inset 9px 9px 19px #9dbdbb, inset
+    -9px -9px 19px #d5fffd;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: row;
+}
+.texte_date_fin_du_monde
+{
+    display: flex;
+    display: -webkit-flex;
+    color: #aa0000;
+    font-size: 30px;
+}
+
+
+.terre_cercle_blanc
         {
-            margin-top: 50px;
+            width: 100%;
+            /* height: 600px;
+            position: relative; */
         }
-.texte_fin_du_monde
-        {
-            color: black;
-            text-align: center;
-            font-size: 42px;
-        }
-.annee_fdm
-        {
-            color: black;
-            text-align: center;
-        }
+.terre_3d svg 
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .terre_3d{
+        height: 320px;
+    }
+
+    /* Body */
+
+    body
+    {
+        height: 100%;
+        background-color: #B9DEDC;
+        font-family: 'Marvel',sans-serif;
+        text-align: justify;
+    }
+
+    /* Header */
+
+    header
+    {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    /* Main */
+
+    main
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Les Titres */
+
+    h1
+    {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    h2
+    {
+        font-size: 31px;
+        text-align: center;
+    }
+
+    /* Grand texte en haut */
+
+    #le_texte_informatif
+    {
+        width: 80%;
+        font-size: 17px;
+    }
+
+    /* Les logos */
+
+    .petits_logo
+    {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Definitions des jauges verticales*/
+
+    input[type=range][orient=vertical]
+    {
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+    cursor: pointer;
+    }
+
+    /*style de l'input*/
+
+    input[type=range]::-webkit-slider-runnable-track 
+    {
+    background: #494949;
+    border-radius: 25px;
+    }
+
+    /* Les sliders */
+
+    .emplacement_sliders
+    {
+        display: flex;
+        display: -webkit-flex;
+        width: 80%;
+        height: 300px;
+        border-radius: 7px;
+        background: #B9DEDC;
+        box-shadow: -9px -9px 19px #d5fffd,
+        9px 9px 19px #9dbdbb;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        margin: 0 auto;
+    }
+    #les_sliders_verticaux
+    {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
+
+    datalist 
+    {
+        color: black;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 175px;
+    }
+
+    /* Jauge Naissance ou deces */
+
+    .input_valeur_content
+    {
+        display: flex;
+        display: -webkit-flex;
+        height: 100%;
+    }
+
+    .naissance_ou_deces
+    {
+        position: relative;
+        text-align: center;
+        color: black;
+    }
+
+    /* texte curseur */
+
+    .div_texte_consigne
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .texte_consigne_curseurs
+    {
+        text-align: center;
+        font-weight: normal;
+        font-size: 25px;
+        margin: 0;
+    }
+
+    /*case population*/
+
+    #nombre_population
+    {
+        width: 80%;
+        height: 60px;
+        border-radius: 7px;
+        background: #B9DEDC;
+        box-shadow: inset 9px 9px 19px #9dbdbb, inset
+        -9px -9px 19px #d5fffd;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .texte_nombre_population
+    {
+        margin: 0 auto;
+        font-size: 20px;
+        color: black;
+    }
+
+    /*case lien article*/
+
+    #lien_article_div
+    {
+        width: 80%;
+        height: 60px;
+        border-radius: 7px;
+        background: #B9DEDC;
+        box-shadow: -9px -9px 19px #d5fffd,
+        9px 9px 19px #9dbdbb;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .le_a
+    {
+        margin: 0 auto;
+        text-decoration: none;
+    }
+
+    .lien_article
+    {
+        font-size: 20px;
+        margin-left: 10px;
+        color: black;
+    }
+
+    /* Fin du monde */
+
+    .fin_du_monde_av_date
+    {
+        color: black;
+        font-size: 20px;
+    }
+
+    .emplacement_fin_du_monde
+    {
+        display: flex;
+        display: -webkit-flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    #date_fin_du_monde
+    {
+        width: 100%;
+        height: 80px;
+        border-radius: 7px;
+        background: #B9DEDC;
+        box-shadow: inset 9px 9px 19px #9dbdbb, inset
+        -9px -9px 19px #d5fffd;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        flex-direction: row;
+    }
+    .texte_date_fin_du_monde
+    {
+        display: flex;
+        display: -webkit-flex;
+        color: #aa0000;
+        font-size: 30px;
+    }
+
+    #nombre_population
+    {
+        width: 80%;
+        height: 60px;
+        border-radius: 7px;
+        background: #B9DEDC;
+        box-shadow: inset 9px 9px 19px #9dbdbb, inset
+        -9px -9px 19px #d5fffd;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: -100px;
+    }
+}
