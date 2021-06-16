@@ -1,4 +1,4 @@
 <?php
-$pdo = new PDO("mysql:host=mysql-heticac.alwaysdata.net:3306;dbname=heticac_eco;charset=utf8", "heticac", "Acb20092001!", [
+$pdo = new PDO("mysql:host=localhost:3306;dbname=eco;charset=utf8", "root", "", [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 ]);

@@ -27,7 +27,7 @@
                     <section class="colonne_gauche">
 
                         <!-- LA TERRE -->
-                        <div>
+                        <div class="terre_cercle_blanc">
                             <div class="terre_3d">
                                 <svg></svg>
                                 <script src="https://d3js.org/d3.v4.min.js"></script>

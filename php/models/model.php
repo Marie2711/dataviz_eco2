@@ -3,7 +3,7 @@
 // Appelle à PDO
 require_once('php/inc/functions.php');
 
-$reponse = $pdo->prepare("SELECT * FROM coordinates");
+$reponse = $pdo->prepare("SELECT * FROM table2");
 $reponse->execute();
 
 echo '<pre>';

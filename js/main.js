@@ -26,7 +26,8 @@ $('.slide_container_verticlal_1').on('input',function(e){
 // Curseurs n°2 (Population)
 
 $('.slide_container_verticlal_2').on('input',function(e){
-    v2list.push(($(this).val())*25) // fois 25 pour retourner une valeur par rapport à 100
+    let input_value = document.querySelector('.slide_container_verticlal_2')
+    v2list.push(($(this).val())*(100 / input_value.max)) // retourner une valeur par rapport à 100
     v2 = v2list[v2list.length-1]
     moy = (Number(v1)+Number(v2)+Number(v3)) / 3
 })
@@ -50,7 +51,6 @@ setInterval(function(){
          // Définition du temps restants
         let diff_moy = 1 - (moy/100)
         let fdm = Math.floor(time_difference * diff_moy)
-        console.log(fdm)
         
         // Affichage
         cd_input.innerHTML = min_fdm + fdm
