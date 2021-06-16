@@ -46,7 +46,6 @@ $('.slide_container_verticlal_3').on('input',function(e){
 
 // FINAL COUNTDOWN
 setInterval(function(){
-    console.log(moy)
     if(moy) {
          // Définition du temps restants
         let diff_moy = 1 - (moy/100)
