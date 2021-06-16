@@ -1,5 +1,5 @@
-const width = 960;
-const height = 500;
+const width = 1000;
+const height = 800;
 const config = {
 speed: 0.005,
 verticalTilt: -30,
@@ -30,7 +30,7 @@ function drawGlobe() {
                 .attr("d", path)
                 .style("stroke", "#888")
                 .style("stroke-width", "1px")
-                .style("fill", (d, i) => '#e5e5e5')
+                .style("fill", (d, i) => '#ADFF2F')
                 .style("opacity", ".6");
                 locations = locationData;
                 drawMarkers();                   
@@ -45,15 +45,24 @@ function drawGraticule() {
         .datum(graticule)
         .attr("class", "graticule")
         .attr("d", path)
-        .style("fill", "#fff")
-        .style("stroke", "#ccc");
+        .style("fill", "#B9DEDC")
+        .style("stroke", "grey");
+        
 }
 
 function enableRotation() {
     d3.timer(function (elapsed) {
         projection.rotate([config.speed * elapsed - 120, config.verticalTilt, config.horizontalTilt]);
         svg.selectAll("path").attr("d", path);
-        drawMarkers();
+        svg.selectAll("circle")
+            .attr('cx', d => projection([d.longitude, d.latitude])[0])
+            .attr('cy', d => projection([d.longitude, d.latitude])[1])
+            .attr('fill', d => {
+                const coordinate = [d.longitude, d.latitude];
+                gdistance = d3.geoDistance(coordinate, projection.invert(center));
+                return gdistance > 1.57 ? 'none' : 'white';
+            })
+        // drawMarkers();
     });
 }        
 
@@ -69,9 +78,14 @@ function drawMarkers() {
         .attr('fill', d => {
             const coordinate = [d.longitude, d.latitude];
             gdistance = d3.geoDistance(coordinate, projection.invert(center));
-            return gdistance > 1.57 ? 'none' : 'steelblue';
+            return gdistance > 1.57 ? 'none' : 'black';
         })
         .attr('r', 7);
+    markerGroup.selectAll('circle').on('click', (a) => {
+        let madiv = document.querySelector('#texte_pays')
+        madiv.innerHTML = a.country
+    });
+
 
     markerGroup.each(function () {
         this.parentNode.appendChild(this);
