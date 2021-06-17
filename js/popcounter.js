@@ -23,7 +23,9 @@ function ChangeValue(number,pv){
 
 		numberstring=numberstring
 
-if (pv==1) {document.getElementById("worldpop").innerHTML=numberstring }
+	if (pv==1) {
+		document.getElementById("worldpop").innerHTML=numberstring
+		}
 }
 
 

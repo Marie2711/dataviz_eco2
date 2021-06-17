@@ -82,8 +82,13 @@ function drawMarkers() {
         })
         .attr('r', 7);
     markerGroup.selectAll('circle').on('click', (a) => {
-        let madiv = document.querySelector('#texte_pays')
-        madiv.innerHTML = a.country
+        console.log(a)
+        document.querySelector("#info_pays").style.display = "block"
+        document.querySelector('#texte_pays').innerHTML = a.country
+        document.querySelector("#texte_methane").innerHTML = a.methane + " (en ktCO2e)"
+        document.querySelector("#texte_pop").innerHTML = a.population + " habitants"
+        document.querySelector("#texte_energie").innerHTML = a.energy + " (en ktCO2) "
+        document.querySelectorAll("#lien_article_div")[1].id = "lien_article_div2"
     });
 
 

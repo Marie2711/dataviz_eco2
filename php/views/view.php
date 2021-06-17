@@ -31,6 +31,8 @@
                     initié. (<img src="img/LOGO_LEGUMES.svg" class="petits_logo"> passer à un régime végétarien, 
                     <img src="img/LOGO_POP_BAS.svg" class="petits_logo"> faire un contrôle des naissances, 
                     <img src="img/flash1.svg" class="petits_logo"> utiliser les énérgies renouvelables.)
+                    <br>
+                    <em>Retrouvez plus d'information en cliquant <a href="https://www.francetvinfo.fr/meteo/climat/dereglement-climatique-la-fin-du-monde-est-elle-vraiment-prevue-pour-2050_3488261.html" target="_blank">ici</a></em>
                 </p>
 
                 <h2>Combien d'années pensez-vous gagner ?</h2>
@@ -110,18 +112,41 @@
                 <script src="js/globe.js"></script>
             </div>
             
-            <!-- POPULATION MONDIALE -->
-            <div id="lien_article_div">
-                <p class="texte_nombre_population">Population mondiale: <span id="worldpop"></span></p>
-            </div>
 
-            <!-- Pays -->
-            <div id="lien_article_div">
-                <p class="texte_nombre_population"><span id="texte_pays"><em>Cliquez sur un pays et voyez ce qui se passe</em></span></p>
-            </div>
+            <section id="world_data">
+
+                <!-- POPULATION MONDIALE -->
+                <div id="lien_article_div">
+                    <p class="texte_nombre_population">Population mondiale: <span id="worldpop"></span></p>
+                </div>
+
+                <!-- Pays -->
+                <div id="lien_article_div">
+                    <p class="texte_nombre_population"><em><u>Pays</u>: </em><span id="texte_pays"><em>Cliquez sur un pays et voyez ce qui se passe</em></span></p>
+                </div>
+            </section>
+
+            <!-- MARKER INFO -->
+            <section id="info_pays">
+
+                <!-- Méthane -->
+                <div id="lien_article_div2">
+                    <p class="texte_nombre_population"><em><u>Méthane</u>: </em><span id="texte_methane"><em>Cliquez sur un pays et voyez ce qui se passe</em></span></p>
+                </div>
+
+                <!-- Pays -->
+                <div id="lien_article_div2">
+                    <p class="texte_nombre_population"><em><u>Population</u>: </em><span id="texte_pop"><em>Cliquez sur un pays et voyez ce qui se passe</em></span></p>
+                </div>
+
+                <!-- Energies -->
+                <div id="lien_article_div2">
+                    <p class="texte_nombre_population"><em><u>Energies consommées</u>: </em><span id="texte_energie"><em>Cliquez sur un pays et voyez ce qui se passe</em></span></p>
+                </div>
+            </section>
         </main>
         
-        <!-- SCRIPT JS -->     
+        <!-- SCRIPT JS -->
         <script src="js/popcounter.js"></script>
         <script src="js/jQuery.js"></script>
         <script src="js/main.js"></script>

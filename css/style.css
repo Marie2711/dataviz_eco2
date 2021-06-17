@@ -195,6 +195,21 @@ datalist
     margin: 15px auto;
 }
 
+#lien_article_div2
+{
+    width: 80%;
+    height: 60px;
+    border-radius: 7px;
+    background: #B9DEDC;
+    box-shadow: inset 9px 9px 19px #9dbdbb, inset
+    -9px -9px 19px #d5fffd;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
 .le_a
 {
     margin: 0 auto;
@@ -261,7 +276,9 @@ datalist
     height: 100%;
 }
 
-
+#info_pays {
+    display: none;
+}
 
 @media screen and (max-width: 640px) {
     .terre_3d{
@@ -450,6 +467,21 @@ datalist
         align-items: center;
         margin: 0 auto;
         margin-bottom: 10px;
+    }
+
+    #lien_article_div2
+    {
+        width: 80%;
+        height: 60px;
+        border-radius: 7px;
+        background: #B9DEDC;
+        box-shadow: -9px -9px 19px #d5fffd,
+        9px 9px 19px #9dbdbb;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        
     }
 
     .le_a
