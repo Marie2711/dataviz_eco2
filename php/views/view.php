@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
         <link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://cdn.pixabay.com/photo/2020/08/19/15/04/icon-5501127_960_720.png"/>
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1">
     </head>
     <body>
